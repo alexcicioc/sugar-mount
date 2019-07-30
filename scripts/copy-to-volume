@@ -1,0 +1,3 @@
+#!/bin/bash
+set -e
+exec rsync -a /sugar/. /sugar_mount --delete-after --progress "$@"
