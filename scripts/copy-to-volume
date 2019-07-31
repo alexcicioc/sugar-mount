@@ -1,3 +1,4 @@
 #!/bin/bash
 set -e
+adduser "$APACHE_RUN_USER" --disabled-password --disabled-login --gecos "" || true
 exec rsync -a /sugar/. /sugar_mount --delete-after --progress "$@"

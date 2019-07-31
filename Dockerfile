@@ -1,7 +1,5 @@
 FROM ubuntu
 
-RUN adduser sugar --disabled-password --disabled-login --gecos ""
-
 RUN mkdir /sugar
 
 WORKDIR "/sugar"
